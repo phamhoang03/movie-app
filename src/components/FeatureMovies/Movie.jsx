@@ -37,23 +37,23 @@ const Movie = (props) => {
             <p className="mb-2 font-bold">Overview</p>
             <p>{overview}</p>
           </div>
-          <div className="mt-4">
+          <div className="mr:flex mt-4 flex text-[2vw] lg:text-3xl">
             <button
               onClick={() => {
                 openPopup(
                   <iframe
                     title="Trailer"
                     src={`https://www.youtube.com/embed/${trailerVideoKey}`}
-                    className="aspect-video w-[50vw]"
+                    className="aspect-video w-[100vw] md:w-[90vw] lg:w-[80vw]"
                   />,
                 );
               }}
-              className="text-10 mr-2 rounded bg-white px-4 py-2 text-black lg:text-lg"
+              className="mr-2 rounded bg-white px-4 py-2 text-black"
             >
               <FontAwesomeIcon icon={faPlay} /> Trailer
             </button>
             <Link to={`/movie/${id}`}>
-              <button className="text-10 rounded bg-slate-300/35 px-4 py-2 lg:text-lg">
+              <button className="text-10 rounded bg-slate-300/35 px-4 py-2">
                 View Detail
               </button>
             </Link>

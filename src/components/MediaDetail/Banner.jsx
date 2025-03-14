@@ -71,7 +71,7 @@ const Banner = ({
                   <iframe
                     title="Trailer"
                     src={`https://www.youtube.com/embed/${trailerVideoKey}`}
-                    className="aspect-video w-[50vw]"
+                    className="aspect-video w-[100vw] md:w-[90vw] lg:w-[80vw]"
                   />,
                 );
               }}

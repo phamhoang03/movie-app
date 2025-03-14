@@ -8,7 +8,7 @@ const RelatedMediaList = ({ mediaList = [], isLoading, title, className }) => {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="grid grid-cols-3 gap-4 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 text-[1.3vw] sm:grid-cols-4 sm:text-[1.5vw] lg:text-lg">
           {mediaList.map((media) => (
             <MovieCard
               key={media.id}

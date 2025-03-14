@@ -18,7 +18,7 @@ const GenresInput = ({ control, onChange, value = [] }) => {
   }, [mediaType]);
 
   return (
-    <div className="flex flex-wrap gap-1">
+    <div className="flex flex-wrap gap-1 text-[1.4vw] sm:text-[1.5vw] lg:text-lg">
       {(data.genres || []).map((genre) => (
         <p
           key={genre.id}
